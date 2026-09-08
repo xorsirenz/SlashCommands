@@ -1,0 +1,91 @@
+settings:
+  no-permission-message: "<red>You don't have permission to use this command."
+  player-only-message: "<red>This command can only be used by players."
+  console-only-message: "<red>This command can only be used from console."
+
+commands:
+
+  rules:
+    enabled: true
+    description: "View the server rules"
+    aliases:
+      - rule
+    permission: ""
+    sender: both
+    messages:
+      - ""
+      - "<aqua><bold>SERVER RULES</bold></aqua>"
+      - "<gray>━━━━━━━━━━━━━━━━━━━━</gray>"
+      - "<white>1.</white> <gray>Be respectful to everyone."
+      - "<white>2.</white> <gray>No cheating or exploiting."
+      - "<white>3.</white> <gray>No spam or advertising."
+      - "<white>4.</white> <gray>Follow staff instructions."
+      - "<white>5.</white> <gray>Have fun!"
+      - "<gray>━━━━━━━━━━━━━━━━━━━━</gray>"
+      - ""
+
+  info:
+    enabled: true
+    description: "View server information"
+    aliases: []
+    permission: ""
+    sender: both
+    messages:
+      - ""
+      - "<aqua><bold>SERVER INFORMATION</bold></aqua>"
+      - "<gray>━━━━━━━━━━━━━━━━━━━━</gray>"
+      - "<gray>Server: <white>My Minecraft Server"
+      - "<gray>Version: <white>Paper 26.2"
+      - "<gray>Players: <white>%online%"
+      - "<gray>Website: <aqua>https://example.com"
+      - "<gray>━━━━━━━━━━━━━━━━━━━━</gray>"
+      - ""
+
+  discord:
+    enabled: true
+    description: "Join our Discord server"
+    aliases:
+      - dc
+    permission: ""
+    sender: both
+    messages:
+      - ""
+      - "<blue><bold>DISCORD</bold></blue>"
+      - "<gray>Join our Discord community!"
+      - ""
+      - "<click:open_url:'https://discord.gg/example'><hover:show_text:'<yellow>Click to join Discord'><aqua><underlined>https://discord.gg/example</underlined></aqua></hover></click>"
+      - ""
+
+  staff:
+    enabled: true
+    description: "Staff information"
+    aliases:
+      - stafflist
+    permission: "slashcommands.staff"
+    sender: player
+    messages:
+      - ""
+      - "<red><bold>STAFF</bold></red>"
+      - "<gray>Need help? Contact a staff member."
+      - ""
+
+  server:
+    enabled: true
+    description: "Server information"
+    aliases:
+      - serverinfo
+    permission: ""
+    sender: both
+    messages:
+      - "<aqua>Welcome to the server, %player%!"
+      - "<gray>There are currently <white>%online%</white> players online."
+
+  announce:
+    enabled: true
+    description: "Make a server announcement"
+    aliases: []
+    permission: "slashcommands.announce"
+    sender: console
+    messages:
+      - "<gold><bold>SERVER ANNOUNCEMENT</bold></gold>"
+      - "<white>This is an announcement!"
