@@ -5,6 +5,8 @@ plugins {
 group = "dev.xorsirenz"
 version = "1.0.3"
 
+val paperVersion = "26.2"
+
 repositories {
     maven {
         name = "papermc"
@@ -30,5 +32,9 @@ tasks {
         filesMatching("plugin.yml") {
             expand("version" to project.version)
         }
+    }
+
+    jar {
+        archiveFileName.set("slashCommands-${project.version}+$paperVersion.jar")
     }
 }
