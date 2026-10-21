@@ -3,4 +3,4 @@ version: ${version}
 main: dev.xorsirenz.slashcommands.SlashCommands
 description: Configurable custom commands for Paper
 author: xorsirenz
-api-version: '26.2'
+api-version: '26.3'

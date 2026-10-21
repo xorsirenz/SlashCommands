@@ -3,9 +3,9 @@ plugins {
 }
 
 group = "dev.xorsirenz"
-version = "1.0.3"
+version = "1.1.0"
 
-val paperVersion = "26.2"
+val paperVersion = "26.3"
 
 repositories {
     maven {
@@ -15,7 +15,7 @@ repositories {
 }
 
 dependencies {
-    compileOnly("io.papermc.paper:paper-api:26.2.build.+")
+    compileOnly("io.papermc.paper:paper-api:26.3.build.+")
 }
 
 java {
